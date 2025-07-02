@@ -1,0 +1,67 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calendar-container {
+  position: relative;
+  width: calc(100% - 320px);
+  margin-right: 320px;
+}
+
+.event-details-panel {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  max-width: 300px;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+  width: 300px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.event-details-panel .panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.event-details-panel h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.event-details-panel button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.event-details-panel button:hover {
+  color: #333;
+}
+
+.event-details-panel .panel-content p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.event-details-panel .panel-content strong {
+  color: #333;
+  margin-right: 0.5rem;
+}
